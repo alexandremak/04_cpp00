@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 23:49:54 by amak              #+#    #+#             */
-/*   Updated: 2024/04/23 20:34:02 by amak             ###   ########.fr       */
+/*   Updated: 2024/04/28 18:45:59 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,17 @@
 class	PhoneBook{
 	private:
 		Contact	listContacts[8];
-		int	writeIndex;
+		int		writeIndex;
+		
+		void 	addContact(Contact &contact);
 
 	public:
 		PhoneBook();
-		void addContact(Contact &contact);
-		void displayList();
+		int		getIndex();
+		void	printContact(std::string index);
+		void 	promptAdd();
+		void 	displayList();	
+		void 	mainMenu();
 };
 
 #endif
