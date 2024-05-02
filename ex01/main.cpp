@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 16:59:03 by amak              #+#    #+#             */
-/*   Updated: 2024/04/28 19:42:21 by amak             ###   ########.fr       */
+/*   Updated: 2024/04/29 16:14:10 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main()
 	while (true)
 	{
 		myPhoneBook.mainMenu();
-		std::cout << "Insert option: " << std::endl;
+		std::cout << "Insert option: ";
 		std::getline(std::cin, optionSelect);
 		std::cout << std::endl;
 		if (optionSelect == "ADD")

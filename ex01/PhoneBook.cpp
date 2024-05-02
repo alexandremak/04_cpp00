@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 20:04:29 by amak              #+#    #+#             */
-/*   Updated: 2024/04/28 19:41:17 by amak             ###   ########.fr       */
+/*   Updated: 2024/05/02 22:44:51 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void PhoneBook::promptAdd() {
 
 void PhoneBook::displayList() {
 	std::cout << "----------+----------+----------+----------" << std::endl;
-	std::cout << "     Index|First Name| Last Name|  Nickname" << std::endl;
+	std::cout << "Index Slot|First Name| Last Name|  Nickname" << std::endl;
 	std::cout << "----------+----------+----------+----------" << std::endl;
 	for (int i = 0; i <= 7; i++) {
 		std::cout << std::right << std::setw(10) << i + 1 << "|";
@@ -74,7 +74,7 @@ void PhoneBook::displayList() {
 
 void PhoneBook::mainMenu() {
 	std::cout << "+---------+----------+----------+---------+" << std::endl;
-	std::cout << "|         ..:: PHONE BOOK v1.0 ::..       |" << std::endl;
+	std::cout << "|         ..:: PHONE BOOK ex01 ::..       |" << std::endl;
 	std::cout << "+---------+----------+----------+---------+" << std::endl;
 	std::cout << std::endl;
 	std::cout << "MENU: " << std::endl;

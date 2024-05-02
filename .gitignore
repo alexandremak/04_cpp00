@@ -61,4 +61,4 @@ ehthumbs.db
 Thumbs.db
 
 # Visual Code file
-.json
+*.json
