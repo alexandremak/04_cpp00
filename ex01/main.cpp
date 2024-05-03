@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 16:59:03 by amak              #+#    #+#             */
-/*   Updated: 2024/04/29 16:14:10 by amak             ###   ########.fr       */
+/*   Updated: 2024/05/03 19:59:32 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	main()
 	
 	while (true)
 	{
-		myPhoneBook.mainMenu();
+		printMainMenu();
 		std::cout << "Insert option: ";
 		std::getline(std::cin, optionSelect);
 		std::cout << std::endl;
@@ -30,7 +30,7 @@ int	main()
 		{
 			myPhoneBook.displayList();
 			if (myPhoneBook.getIndex()) {
-				std::cout << "Insert index: " << std::endl;
+				std::cout << "Insert index: ";
 				std::getline(std::cin, index);
 				myPhoneBook.printContact(index);
 			}

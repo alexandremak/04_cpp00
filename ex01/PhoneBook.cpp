@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 20:04:29 by amak              #+#    #+#             */
-/*   Updated: 2024/05/02 22:44:51 by amak             ###   ########.fr       */
+/*   Updated: 2024/05/03 20:07:00 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,16 @@ int	PhoneBook::getIndex() {
 	return this->writeIndex;
 }
 
-void PhoneBook:: printContact(std::string index) {
-	int	number = atoi(index.c_str());
+void	PhoneBook:: printContact(std::string index) {
+	int	number = atoi(index.c_str()) - 1;
 	
-	if (((number - 1) < 0) || ((number - 1) > 8))
+	if (((number) < 0) || ((number) > 7))
 		std::cout << "Wrong index!" << std::endl;
 	else
-		this->listContacts[number - 1].printContact();
+		this->listContacts[number].printContact();
 };
 
-void PhoneBook::addContact(Contact &contact) {
+void	PhoneBook::addContact(Contact &contact) {
 	if (writeIndex < 8) {
 		this->listContacts[writeIndex++] = contact;
 	}
@@ -38,7 +38,7 @@ void PhoneBook::addContact(Contact &contact) {
 	}
 }
 
-void PhoneBook::promptAdd() {
+void	PhoneBook::promptAdd() {
 	Contact newContact;
 	std::string first_Name;
 	std::string last_Name;
@@ -61,7 +61,7 @@ void PhoneBook::promptAdd() {
 	addContact(newContact);
 }
 
-void PhoneBook::displayList() {
+void	PhoneBook::displayList() {
 	std::cout << "----------+----------+----------+----------" << std::endl;
 	std::cout << "Index Slot|First Name| Last Name|  Nickname" << std::endl;
 	std::cout << "----------+----------+----------+----------" << std::endl;
@@ -72,7 +72,7 @@ void PhoneBook::displayList() {
 	std::cout << std::endl;
 }
 
-void PhoneBook::mainMenu() {
+void	printMainMenu() {
 	std::cout << "+---------+----------+----------+---------+" << std::endl;
 	std::cout << "|         ..:: PHONE BOOK ex01 ::..       |" << std::endl;
 	std::cout << "+---------+----------+----------+---------+" << std::endl;
@@ -82,4 +82,4 @@ void PhoneBook::mainMenu() {
 	std::cout << "SEARCH - Search a contact and view information" << std::endl;
 	std::cout << "EXIT - Exit program" << std::endl;
 	std::cout << std::endl;
-};
+}

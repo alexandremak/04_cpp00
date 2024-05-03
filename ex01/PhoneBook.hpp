@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 23:49:54 by amak              #+#    #+#             */
-/*   Updated: 2024/04/28 18:45:59 by amak             ###   ########.fr       */
+/*   Updated: 2024/05/03 19:54:12 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ class	PhoneBook{
 		void	printContact(std::string index);
 		void 	promptAdd();
 		void 	displayList();	
-		void 	mainMenu();
 };
+
+void 	printMainMenu();
 
 #endif
