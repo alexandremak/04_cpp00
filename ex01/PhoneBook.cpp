@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 20:04:29 by amak              #+#    #+#             */
-/*   Updated: 2024/05/03 20:07:00 by amak             ###   ########.fr       */
+/*   Updated: 2024/05/09 18:22:28 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	PhoneBook:: printContact(std::string index) {
 	int	number = atoi(index.c_str()) - 1;
 	
 	if (((number) < 0) || ((number) > 7))
-		std::cout << "Wrong index!" << std::endl;
+		std::cout << "Invalid index number!" << std::endl;
 	else
 		this->listContacts[number].printContact();
 };
@@ -77,9 +77,10 @@ void	printMainMenu() {
 	std::cout << "|         ..:: PHONE BOOK ex01 ::..       |" << std::endl;
 	std::cout << "+---------+----------+----------+---------+" << std::endl;
 	std::cout << std::endl;
-	std::cout << "MENU: " << std::endl;
+	std::cout << "Menu: " << std::endl;
 	std::cout << "ADD - Add a contact" << std::endl;
-	std::cout << "SEARCH - Search a contact and view information" << std::endl;
+	std::cout << "SEARCH - Search a contact and view information"
+		<< std::endl;
 	std::cout << "EXIT - Exit program" << std::endl;
 	std::cout << std::endl;
 }

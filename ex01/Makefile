@@ -6,11 +6,11 @@
 #    By: amak <amak@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 23:29:05 by amak              #+#    #+#              #
-#    Updated: 2024/04/28 18:06:50 by amak             ###   ########.fr        #
+#    Updated: 2024/05/09 18:12:07 by amak             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = phonebook
+NAME = MyAwesomePhoneBook
 
 CC = c++
 

@@ -6,7 +6,7 @@
 /*   By: amak <amak@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 16:59:03 by amak              #+#    #+#             */
-/*   Updated: 2024/05/03 19:59:32 by amak             ###   ########.fr       */
+/*   Updated: 2024/05/09 18:23:05 by amak             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ int	main()
 		{
 			myPhoneBook.displayList();
 			if (myPhoneBook.getIndex()) {
-				std::cout << "Insert index: ";
+				std::cout << "Insert index <1-8>: ";
 				std::getline(std::cin, index);
+				std::cout << std::endl;
 				myPhoneBook.printContact(index);
 			}
 		}
